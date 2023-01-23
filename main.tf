@@ -5,11 +5,11 @@ terraform {
       version = "4.51.0"
     }
   }
-  # backend "s3" {
-  #   bucket = "jjay-tf-98277"
-  #   key    = "terraform.tfstate"
-  #   region = "us-east-1"
-  # }
+  backend "s3" {
+    bucket = "jjay-tf-98277"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
